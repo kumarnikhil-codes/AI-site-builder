@@ -24,7 +24,7 @@ const Home = () => {
         return toast.error('Please enter a message');
       }
        setLoading(true);
-       const {data} = await api.post('http://localhost:3000/api/project', {initial_prompt: input});
+       const {data} = await api.post('https://ai-site-backend-bb9c.onrender.com/api/project', {initial_prompt: input});
        setLoading(false);
        navigate(`/project/${data.projectId}`);
     } catch (error: any) {
