@@ -11,7 +11,7 @@ import Navbar from './components/Navbar'
 import { Toaster } from 'sonner'
 import AuthPage from './pages/auth/AuthPage'
 import Settings from './pages/Setting'
-import Loading from './pages/loading'
+import Loading from './pages/TEMP_Loading'
 const App = () => {
 
   const {pathname} =useLocation();
