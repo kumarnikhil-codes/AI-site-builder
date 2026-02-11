@@ -51,7 +51,7 @@ export const makeRevision = async (req:Request, res: Response ) => {
 
         //Enhance user prompt
         const promptEnhanceResponse = await openai.chat.completions.create({
-            model: "qwen/qwen-2.5-coder-32b-instruct:free",
+            model: "meta-llama/llama-3.3-70b-instruct:free",
             messages:[
                 {
                     role: 'system',
