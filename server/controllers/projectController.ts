@@ -51,7 +51,7 @@ export const makeRevision = async (req:Request, res: Response ) => {
 
         //Enhance user prompt
         const promptEnhanceResponse = await openai.chat.completions.create({
-            model: "kwaipilot/kat-coder-pro:free",
+            model: "qwen/qwen-2.5-coder-32b-instruct:free",
             messages:[
                 {
                     role: 'system',
