@@ -51,7 +51,7 @@ export const makeRevision = async (req:Request, res: Response ) => {
 
         //Enhance user prompt
         const promptEnhanceResponse = await openai.chat.completions.create({
-            model: "kwaipilot/kat-coder-pro",
+            model: "z-ai/glm-4.5-air:free",
             messages:[
                 {
                     role: 'system',
@@ -92,7 +92,7 @@ Return ONLY the enhanced request, nothing else. Keep it concise (1-2 sentences).
 
         // Generate website code
         const codeGenerationResponse = await openai.chat.completions.create({
-            model: "kwaipilot/kat-coder-pro",
+            model: "z-ai/glm-4.5-air:free",
             messages: [
                 {
                     role: 'system',
@@ -246,7 +246,7 @@ export const createProject = async (req: Request, res: Response) => {
 
         // 3. Generate the Website Code using AI
         const response = await openai.chat.completions.create({
-            model: "kwaipilot/kat-coder-pro",
+            model: "z-ai/glm-4.5-air:free",
             messages: [
                 {
                     role: 'system',
